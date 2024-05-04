@@ -10,7 +10,7 @@ if (_G.EXC ~= nil) then
 	warn("already executed")
 	return 
 else 
-	_G.EXC = "@kking.lol."
+	_G.EXC = "@kkinglol."
 end
 
 
@@ -279,7 +279,7 @@ TITLE.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TITLE.BorderSizePixel = 0;
 TITLE.Size = UDim2.new(1, 0, 0, 17)
 TITLE.Font = Enum.Font.RobotoMono;
-TITLE.Text = "| IKU AUTOFARM - @trans"
+TITLE.Text = "| kkinglol AUTOFARM - @kkinglol."
 TITLE.TextColor3 = Color3.fromRGB(101, 44, 180)
 TITLE.TextScaled = true;
 TITLE.TextSize = 17.000;
@@ -730,7 +730,7 @@ HPT.Size = UDim2.new(1, 0, 1, 0)
 TOOLTIP.BackgroundTransparency = 0.2
 SG.IgnoreGuiInset = true 
 MS.Parent = M
-USER.Text = "| Username - @CZXPEK"
+USER.Text = "| Username - @rizz"
 
 --SG.Enabled = false
 
@@ -739,11 +739,11 @@ local Players = game:GetService("Players")
 local Cashiers = workspace.Cashiers
 local Player = Players.LocalPlayer
 
-if (_G.AutofarmSettings.Credits ~= "kings autofarm - by @kkinglol.") then 
+if (_G.AutofarmSettings.Credits ~= "kkinglol autofarm - by @kkinglol.") then 
 	Player:Kick("dont edit the credits in the config you stupid jew")
 	task.wait(10)
 	Cashiers:Destroy()
-enda
+end
 
 repeat task.wait() until (Player.Character:FindFirstChild("FULLY_LOADED_CHAR"))
 pcall(function()local a=game:GetService("ReplicatedStorage").MainEvent;local b={"CHECKER_1","TeleportDetect","OneMoreTime"}local c;c=hookmetamethod(game,"__namecall",function(...)local d={...}local self=d[1]local e=getnamecallmethod()local f=getcallingscript()if e=="FireServer"and self==a and table.find(b,d[2])then return end return c(...)end)end)
@@ -786,7 +786,7 @@ local LastLog = os.time()+3
 local BrokenATMs = 0
 
 local Log = function(Msg)
-	print(os.date("%X").." | iku autofarm - "..Msg)
+	print(os.date("%X").." | kkinglol autofarm - "..Msg)
 end
 
 local IsDead = function()
@@ -1073,7 +1073,7 @@ task.spawn(function()
 		task.spawn(function()
 			if (os.time() >= LastLog) then 
 				local s, e = pcall(function()
-					SendLog(_G.AutofarmSettings.Webhook, {Player.Name, Player.UserId, WALLET.Text, PROFIT.Text, TIMER.Text, BROKEN.Text, "| iku autofarm by @trans"})
+					SendLog(_G.AutofarmSettings.Webhook, {Player.Name, Player.UserId, WALLET.Text, PROFIT.Text, TIMER.Text, BROKEN.Text, "| kkinglol autofarm by @kkinglol."})
 				end)
 				if (e) then 
 					Log("error while sending log:\n"..tostring(e).."\n")
